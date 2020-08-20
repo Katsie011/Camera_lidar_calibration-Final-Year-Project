@@ -15,8 +15,11 @@ The other method is markerless calibration. In these cases, the goal is to use t
 The most common sensors used in autonomous vehicles are lidar and stereo cameras. 
 On the fly Camera \& LiDAR Calibration
 TODO ref
-The main task is to find an efficient way to map point clouds from lidar sensors to the pixels of camera sensors
+The main task is to find an efficient way to map point clouds from lidar sensors to the pixels of camera sensors. In 
+TODO ref
+the solution to this problem was to have two sets of calibration, one rough and the other small detail fine alignment. To do the coarse alignment, they expanded the point dots into planes and tried to find objects in both the lidar and camera images using straight lines.
 
+-- CNNs for finding these objects?
 
 
 
