@@ -1,5 +1,5 @@
-% \documentclass[BCOR13mm,DIV15]{scrartcl}
-\documentclass[12pt]{article}
+\documentclass[BCOR13mm,DIV15]{scrartcl}
+% \documentclass[12pt]{IEEEtran}
 
 % General document formatting
 \usepackage[margin=0.7in, bottom=.7in]{geometry}
@@ -19,6 +19,17 @@
 
 \usepackage{lipsum}
 \usepackage{natbib}
+
+% \usepackage[
+% backend=biber,
+% style=alphabetic,
+% citestyle=authoryear
+% ]{biblatex}
+
+% \addbibresource{EEE4022S.bib} %Imports bibliography file
+
+
+
 
 \usepackage{xcolor}
 
@@ -132,10 +143,15 @@ Configurable vehicles which adapt to their modification.
 \subsection{Research goal}
 
 
+% hello world \autocite[1]{fu_lidar-camera_2020}
+% \autocite[3]{nagy_--fly_2020}
+
+
 \subsection{Literature Review}
 \input{LiteratureReview.tex}
-Change this so it's an include
 
-Put the rest as another file 
-    
+\bibliography{EEE4022S.bib}
+\bibliographystyle{abbrv}
+
+% \printbibliography
 \end{document}

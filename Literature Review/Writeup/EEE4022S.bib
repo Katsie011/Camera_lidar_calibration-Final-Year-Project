@@ -1,0 +1,122 @@
+
+@article{fuLiDARCameraCalibrationArbitrary2020,
+  title = {{{LiDAR}}-{{Camera Calibration Under Arbitrary Configurations}}: {{Observability}} and {{Methods}}},
+  shorttitle = {{{LiDAR}}-{{Camera Calibration Under Arbitrary Configurations}}},
+  author = {Fu, Bo and Wang, Yue and Ding, Xiaqing and Jiao, Yanmei and Tang, Li and Xiong, Rong},
+  year = {2020},
+  month = jun,
+  volume = {69},
+  pages = {3089--3102},
+  issn = {0018-9456, 1557-9662},
+  doi = {10.1109/TIM.2019.2931526},
+  abstract = {LiDAR-camera calibration is a precondition for many multi-sensor systems that fuse data from LiDAR and camera. However, the constraint from common field of view and the requirement for time synchronization make the calibration a challenging problem. In this paper, we propose a novel LiDAR-camera calibration method aiming to eliminate these two constraints. Specifically, we capture a scan of 3-D LiDAR when both the environment and the sensors are stationary, then move the camera to reconstruct the 3-D environment using the sequentially obtained images. Finally, we align 3-D visual points to the laser scan based on a tightly couple graph optimization method to calculate the extrinsic parameter between LiDAR and camera. Under this design, the configuration of these two sensors is free from the common field-of-view constraint due to the extended view from the moving camera. In addition, we also eliminate the requirement for time synchronization as we only use the single scan of laser data when the sensors are stationary. We theoretically derive the conditions of minimal observability for our method and prove that the accuracy of calibration is improved by collecting more observations from multiple scattered calibration targets. In addition, the proposed method is beneficial to not only plane measurement error-based calibration targets, such as chessboards, but also other point measurement error-based calibration targets, such as boxes and polygonal boards. We validate our method on both simulation and real-world data sets. Experiments show that our method achieves higher accuracy than other comparable methods, which is in accordance with our theoretical analysis.},
+  file = {/home/michaelkatsoulis/Documents/University of Cape Town/2020 Semester 2/EEE4022S - Final Project/Readings/LiDAR-Camera Calibration Under Arbitrary.pdf},
+  journal = {IEEE Transactions on Instrumentation and Measurement},
+  language = {en},
+  number = {6}
+}
+
+@inproceedings{furgaleUnifiedTemporalSpatial2013,
+  title = {Unified Temporal and Spatial Calibration for Multi-Sensor Systems},
+  booktitle = {2013 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}},
+  author = {Furgale, Paul and Rehder, Joern and Siegwart, Roland},
+  year = {2013},
+  month = nov,
+  pages = {1280--1286},
+  publisher = {{IEEE}},
+  address = {{Tokyo}},
+  doi = {10.1109/IROS.2013.6696514},
+  abstract = {In order to increase accuracy and robustness in state estimation for robotics, a growing number of applications rely on data from multiple complementary sensors. For the best performance in sensor fusion, these different sensors must be spatially and temporally registered with respect to each other. To this end, a number of approaches have been developed to estimate these system parameters in a two stage process, first estimating the time offset and subsequently solving for the spatial transformation between sensors.},
+  file = {/home/michaelkatsoulis/Zotero/storage/JU4DNXFL/Furgale et al. - 2013 - Unified temporal and spatial calibration for multi.pdf},
+  isbn = {978-1-4673-6358-7 978-1-4673-6357-0},
+  language = {en}
+}
+
+@article{lukenMultiSensorCalibrationLowCost2015,
+  title = {Multi-{{Sensor Calibration}} of {{Low}}-{{Cost Magnetic}}, {{Angular Rate}} and {{Gravity Systems}}},
+  author = {L{\"u}ken, Markus and Misgeld, Berno J. E. and R{\"u}schen, Daniel and Leonhardt, Steffen},
+  year = {2015},
+  month = oct,
+  volume = {15},
+  pages = {25919--25936},
+  publisher = {{Multidisciplinary Digital Publishing Institute}},
+  doi = {10.3390/s151025919},
+  abstract = {We present a new calibration procedure for low-cost nine degrees-of-freedom (9DOF) magnetic, angular rate and gravity (MARG) sensor systems, which relies on a calibration cube, a reference table and a body sensor network (BSN). The 9DOF MARG sensor is part of our recently-developed ``Integrated Posture and Activity Network by Medit Aachen'' (IPANEMA) BSN. The advantage of this new approach is the use of the calibration cube, which allows for easy integration of two sensor nodes of the IPANEMA BSN. One 9DOF MARG sensor node is thereby used for calibration; the second 9DOF MARG sensor node is used for reference measurements. A novel algorithm uses these measurements to further improve the performance of the calibration procedure by processing arbitrarily-executed motions. In addition, the calibration routine can be used in an alignment procedure to minimize errors in the orientation between the 9DOF MARG sensor system and a motion capture inertial reference system. A two-stage experimental study is conducted to underline the performance of our calibration procedure. In both stages of the proposed calibration procedure, the BSN data, as well as reference tracking data are recorded. In the first stage, the mean values of all sensor outputs are determined as the absolute measurement offset to minimize integration errors in the derived movement model of the corresponding body segment. The second stage deals with the dynamic characteristics of the measurement system where the dynamic deviation of the sensor output compared to a reference system is Sensors 2015, 15 25920 corrected. In practical validation experiments, this procedure showed promising results with a maximum RMS error of 3.89\textdegree.},
+  copyright = {http://creativecommons.org/licenses/by/3.0/},
+  file = {/home/michaelkatsoulis/Zotero/storage/NGJLUMR3/Lüken et al. - 2015 - Multi-Sensor Calibration of Low-Cost Magnetic, Ang.pdf},
+  journal = {Sensors},
+  keywords = {angular rate and gravity sensors,BSN,calibration,magnetic,MEMS},
+  language = {en},
+  number = {10}
+}
+
+@article{nagyOntheFlyCameraLidar2020,
+  title = {On-the-{{Fly Camera}} and {{Lidar Calibration}}},
+  author = {Nagy, Bal{\'a}zs and Benedek, Csaba},
+  year = {2020},
+  month = apr,
+  volume = {12},
+  pages = {1137},
+  issn = {2072-4292},
+  doi = {10.3390/rs12071137},
+  abstract = {Sensor fusion is one of the main challenges in self driving and robotics applications. In this paper we propose an automatic, online and target-less camera-Lidar extrinsic calibration approach. We adopt a structure from motion (SfM) method to generate 3D point clouds from the camera data which can be matched to the Lidar point clouds; thus, we address the extrinsic calibration problem as a registration task in the 3D domain. The core step of the approach is a two-stage transformation estimation: First, we introduce an object level coarse alignment algorithm operating in the Hough space to transform the SfM-based and the Lidar point clouds into a common coordinate system. Thereafter, we apply a control point based nonrigid transformation refinement step to register the point clouds more precisely. Finally, we calculate the correspondences between the 3D Lidar points and the pixels in the 2D camera domain. We evaluated the method in various real-life traffic scenarios in Budapest, Hungary. The results show that our proposed extrinsic calibration approach is able to provide accurate and robust parameter settings on-the-fly.},
+  file = {/home/michaelkatsoulis/Documents/University of Cape Town/2020 Semester 2/EEE4022S - Final Project/Readings/On-the-Fly_Camera_and_Lidar_Calibration.pdf},
+  journal = {Remote Sensing},
+  language = {en},
+  number = {7}
+}
+
+@inproceedings{pusztaiAccurateCalibrationLiDARCamera2017,
+  title = {Accurate {{Calibration}} of {{LiDAR}}-{{Camera Systems Using Ordinary Boxes}}},
+  booktitle = {2017 {{IEEE International Conference}} on {{Computer Vision Workshops}} ({{ICCVW}})},
+  author = {Pusztai, Zoltan and Hajder, Levente},
+  year = {2017},
+  month = oct,
+  pages = {394--402},
+  publisher = {{IEEE}},
+  address = {{Venice, Italy}},
+  doi = {10.1109/ICCVW.2017.53},
+  abstract = {This paper deals with the calibration of a visual system, consisting of RGB cameras and 3D Light Detection And Ranging (LiDAR) sensors. Registering two separate point clouds coming from different modalities is always challenging. We propose a novel and accurate calibration method using simple cardboard boxes with known sizes. Our approach is principally based on the detection of box planes in LiDAR point clouds, thus it can calibrate different LiDAR equipments. Moreover, camera-LiDAR calibration is also possible with minimal manual intervention. The proposed algorithm is validated and compared to state-ofthe-art techniques both on synthesized data and real-world measurements taken by a visual system consisting of LiDAR sensors and RGB cameras.},
+  file = {/home/michaelkatsoulis/Documents/University of Cape Town/2020 Semester 2/EEE4022S - Final Project/Readings/Pusztai_Accurate_Calibration_of_ICCV_2017_paper.pdf},
+  isbn = {978-1-5386-1034-3},
+  language = {en}
+}
+
+@misc{SensorsFreeFullText,
+  title = {Sensors | {{Free Full}}-{{Text}} | {{Multi}}-{{Sensor Calibration}} of {{Low}}-{{Cost Magnetic}}, {{Angular Rate}} and {{Gravity Systems}} | {{HTML}}},
+  howpublished = {https://www.mdpi.com/1424-8220/15/10/25919/htm}
+}
+
+@inproceedings{taylorMotionbasedCalibrationMultimodal2015,
+  title = {Motion-Based Calibration of Multimodal Sensor Arrays},
+  booktitle = {2015 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})},
+  author = {Taylor, Zachary and Nieto, Juan},
+  year = {2015},
+  month = may,
+  pages = {4843--4850},
+  publisher = {{IEEE}},
+  address = {{Seattle, WA, USA}},
+  doi = {10.1109/ICRA.2015.7139872},
+  abstract = {This paper formulates a new pipeline for automated extrinsic calibration of multi-sensor mobile platforms. The new method can operate on any combination of cameras, navigation sensors and 3D lidars. Current methods for extrinsic calibration are either based on special markers and/or chequerboards, or they require a precise parameters initialisation for the calibration to converge. These two limitations prevent them from being fully automatic. The method presented in this paper removes these restrictions. By combining information extracted from both, platform's motion estimates and external observations, our approach eliminates the need for special markers and also removes the need for manual initialisation. A third advantage is that the motion-based automatic initialisation does not require overlapping field of view between sensors. The paper also provides a method to estimate the accuracy of the resulting calibration. We illustrate the generalisation of our approach and validate its performance by showing results with two contrasting datasets. The first dataset was collected in a city with a car platform, and the second one was collected in a tree-crop farm with a Segway platform.},
+  file = {/home/michaelkatsoulis/Documents/University of Cape Town/2020 Semester 2/EEE4022S - Final Project/Readings/Motion-Based Calibration of Multimodal Sensor Arrays.pdf},
+  isbn = {978-1-4799-6923-4},
+  language = {en}
+}
+
+@article{taylorMotionBasedCalibrationMultimodal2016,
+  title = {Motion-{{Based Calibration}} of {{Multimodal Sensor Extrinsics}} and {{Timing Offset Estimation}}},
+  author = {Taylor, Zachary and Nieto, Juan},
+  year = {2016},
+  month = oct,
+  volume = {32},
+  pages = {1215--1229},
+  issn = {1552-3098, 1941-0468},
+  doi = {10.1109/TRO.2016.2596771},
+  abstract = {This paper presents a system for calibrating the extrinsic parameters and timing offsets of an array of cameras, 3-D lidars, and global positioning system/inertial navigation system sensors, without the requirement of any markers or other calibration aids. The aim of the approach is to achieve calibration accuracies comparable with state-of-the-art methods, while requiring less initial information about the system being calibrated and thus being more suitable for use by end users. The method operates by utilizing the motion of the system being calibrated. By estimating the motion each individual sensor observes, an estimate of the extrinsic calibration of the sensors is obtained. Our approach extends standard techniques for motion-based calibration by incorporating estimates of the accuracy of each sensor's readings. This yields a probabilistic approach that calibrates all sensors simultaneously and facilitates the estimation of the uncertainty in the final calibration. In addition, we combine this motion-based approach with appearance information. This gives an approach that requires no initial calibration estimate and takes advantage of all available alignment information to provide an accurate and robust calibration for the system. The new framework is validated with datasets collected with different platforms and different sensors' configurations, and compared with state-of-the-art approaches.},
+  file = {/home/michaelkatsoulis/Documents/University of Cape Town/2020 Semester 2/EEE4022S - Final Project/Readings/Motion-Based Calibration of Multimodal Sensor Extrinsics and Timing Offset Estimation.pdf},
+  journal = {IEEE Transactions on Robotics},
+  language = {en},
+  number = {5}
+}
+
+
