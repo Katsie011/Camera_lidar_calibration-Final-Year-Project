@@ -33,20 +33,18 @@
 
 \usepackage{xcolor}
 
-
-
-
-
-
 %Dark mode pdf
-\pagecolor[rgb]{0.15,0.14,0.125} % Dark Grey
-\definecolor{myTextColour}{rgb}{0.9,0.9,0.8}
-
+% \pagecolor[rgb]{0.15,0.14,0.125} % Dark Grey
+% \definecolor{myTextColour}{rgb}{0.9,0.9,0.8}
 
 % Light Theme
-% \definecolor{myTextColour}{rgb}{0,0,0} 
+\definecolor{myTextColour}{rgb}{0,0,0} 
+
+
+
+
 \colorlet{thisTextColor}{myTextColour}
-\color{thisTextColor} % Whitish
+% \color{thisTextColor} % Whitish
 
 
 %  CHange Link Colour!!!!!!!!!!!!!!!!
@@ -56,7 +54,7 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=myTextColour,
+    linkcolor=red,
     filecolor=magenta,      
     urlcolor=blue,
 }
@@ -93,7 +91,7 @@
     \rule{\linewidth}{0.5pt} \\[25pt]
     \LARGE Michael Katsoulis\\[5pt]
     \large \texttt{KTSMIC005} \\[1cm]
-    24 June 2020\\ %                                Date
+    24 August 2020\\ %                                Date
     % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Check Date!!!!!!!!!!!!!!!!!!!!!!!!!!!
     \rule{5cm}{0.5pt}\\[-5pt]
     \rule{2.7cm}{0.5pt}
@@ -111,7 +109,7 @@
     \end{enumerate}
     \begin{flushright}
         Michael Katsoulis\\
-        22 June 2020
+        24 August 2020
     \end{flushright}
     \hrulefill
 \end{titlepage}
@@ -120,38 +118,26 @@
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\tableofcontents
-\pagebreak
 
 
-\section{Introduction}
-
-Why we want to calibrate a system
-In the modern world, the need for autonomous vehicles is growing daily. They would improve the quality of human life, provide advances in science and open new opportunities. One of the problems that is being faced at the moment is that vehicles are of different shapes and sizes, this leads to the sensors on each vehicle being in different locations. 
-
-The goal of this project is to investigate the current methods of determining the spacial as well as temporal offsets between sensors on a vehicle automatically. This would allow a decrease in calibration time, ease of manufacture as well as allow vehicles to continue to operate in the case of an unforeseen incident moving a sensor. 
-This would allow for cheaper and more robust vehicles.
+% \tableofcontents
+% \pagebreak
 
 
-Same algorithm on multiple models of vehicle. 
-
-Drones which can reconfigure in flight or continue if damaged.
-
-Configurable vehicles which adapt to their modification.
+\section{Literature Review}
+\subsection{Introduction to the problem}
 
 
-\subsection{Research goal}
+In the modern world, the need for autonomous vehicles is growing daily. If common vehicles could become autonomous, it would improve the quality of human life, provide advances in science and open new opportunities. One of the problems with trying to make vehicles autonomous is that they are normally different shapes and sizes. Vehicles are sometimes modified or have accidents which would deform them in some way. This leads to the sensors on each vehicle being in different locations.  
 
+The goal of this project is to investigate the current methods of determining the spacial and temporal offsets between sensors on a vehicle automatically. This would allow a decrease in calibration time, ease of manufacture as well as allow vehicles to continue to operate in the case of an unforeseen incident which moves a sensor.  
 
-% hello world \autocite[1]{fu_lidar-camera_2020}
-% \autocite[3]{nagy_--fly_2020}
+This would save costs as the same algorithm on multiple models of vehicle. Drones could be built which can reconfigure their geometry mid-flight or ,if damaged on a mission, recalibrate and still get home safely.
 
-
-\subsection{Literature Review}
 \input{LiteratureReview.tex}
 
 \bibliography{EEE4022S.bib}
 \bibliographystyle{abbrv}
-
+ 
 % \printbibliography
 \end{document}
