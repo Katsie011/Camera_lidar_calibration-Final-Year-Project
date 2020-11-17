@@ -1,3 +1,28 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{fuLiDARCameraCalibrationArbitrary2020}
+B.~Fu, Y.~Wang, X.~Ding, Y.~Jiao, L.~Tang, and R.~Xiong.
+\newblock {{LiDAR}}-{{Camera Calibration Under Arbitrary Configurations}}:
+  {{Observability}} and {{Methods}}.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement},
+  69(6):3089--3102, June 2020.
+
+\bibitem{nagyOntheFlyCameraLidar2020}
+B.~Nagy and C.~Benedek.
+\newblock On-the-{{Fly Camera}} and {{Lidar Calibration}}.
+\newblock {\em Remote Sensing}, 12(7):1137, Apr. 2020.
+
+\bibitem{pusztaiAccurateCalibrationLiDARCamera2017}
+Z.~Pusztai and L.~Hajder.
+\newblock Accurate {{Calibration}} of {{LiDAR}}-{{Camera Systems Using Ordinary
+  Boxes}}.
+\newblock In {\em 2017 {{IEEE International Conference}} on {{Computer Vision
+  Workshops}} ({{ICCVW}})}, pages 394--402, {Venice, Italy}, Oct. 2017. {IEEE}.
+
+\bibitem{taylorMotionBasedCalibrationMultimodal2016}
+Z.~Taylor and J.~Nieto.
+\newblock Motion-{{Based Calibration}} of {{Multimodal Sensor Extrinsics}} and
+  {{Timing Offset Estimation}}.
+\newblock {\em IEEE Transactions on Robotics}, 32(5):1215--1229, Oct. 2016.
 
 \end{thebibliography}
